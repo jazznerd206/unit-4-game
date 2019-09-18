@@ -13,6 +13,12 @@ img {
     border: 10px, solid, green;
 }
 
+.availDef {
+    display: inline-block;
+    border: 10px, solid, green;
+}
+
+
 h1 {
     font-size: 40px;
     text-align: center;
