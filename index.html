@@ -2,75 +2,66 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- reset stylesheet -->
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- external stylesheet -->
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <!-- jQuery link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Star Wars RPG</title>
 </head>
 <body>
-    <div class="jumbotron myjumbotron text-center">
-        HAN SHOT FIRST
+
+    <div id="header">
+        <h1 id="gametitle">HAN SHOT FIRST</h1>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-3">
-                    <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="assets/images/Han.jpg" alt="Han Solo">
-                            <div class="card-body">
-                              <h5 class="card-title">Han Solo</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>  
-                    </div>  
-                </div>
-                           
-            <div class="col-sm-3">
-                    <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="assets/images/IG-88.jpg" alt="IG-88">
-                            <div class="card-body">
-                              <h5 class="card-title">IG-88</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                    </div>
-            </div>
-            <div class="col-sm-3">
-                    <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="assets/images/Boba.png" alt="Boba Fett">
-                            <div class="card-body">
-                              <h5 class="card-title">Boba Fett</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                    </div>
-            </div>
-            <div class="col-sm-3">
-                    <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="assets/images/Jabba.jpg" alt="Jabba the Hutt">
-                            <div class="card-body">
-                              <h5 class="card-title">Jabba the Hutt</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                    </div>
-            </div>
+
+    <div id="char-row">
+        <div id="Han" class="char-choice">
+            <h3 id="char-name">Han Solo</h3>
+            <img class="picture" src="assets/images/Han.jpg">
+            <h3 id="health-points">100</h3>
         </div>
-        <div class="row">
-            <div class="col-lg-4 text-center">
-                <p id="playerone">USER PLAYER</p>
-            </div>
-            <div class="col-lg-4 text-center">
-                <button id="attack-button">SHOOT</button>
-            </div>
-            <div class="col-lg-4 text-center">
-                <p id="playertwo">OPPONENT</p>
-            </div>
+        <div id="Boba" class="char-choice">
+            <h3 id="char-name">Boba Fett</h3>
+            <img class="picture" src="assets/images/Boba.png">
+            <h3 id="health-points">140</h3>
+        </div>
+        <div id="IG" class="char-choice">
+            <h3 id="char-name">IG-88</h3>
+            <img class="picture" src="assets/images/IG-88.jpg">
+            <h3 id="health-points">160</h3>
+        </div>
+        <div id="Jabba" class="char-choice">
+            <h3 id="char-name">Jabba The Hutt</h3>
+            <img class="picture" src="assets/images/Jabba.jpg">
+            <h3 id="health-points">200</h3>
         </div>
     </div>
 
+    <h2>Attacker: </h2>
+    <div id="user-pick-one"></div>
+    <h2>Enemies available to attack: </h2>
+    <div id="choice-other"></div>
+    <h2>Fight: </h2>
+    <div id="battleground"></div>
+    <button id="shoot">SHOOT</button>
+    <h2>Current Opponent: </h2>
+    <div id="opponent"></div>
+    <button id="reset">START OVER</button>
 
+
+
+
+
+
+
+
+
+    <!-- JS game link -->
     <script src="assets/javascript/game.js"></script>
 </body>
 </html>
