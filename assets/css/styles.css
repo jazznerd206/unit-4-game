@@ -1,6 +1,19 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-image: url(../images/MF_background.jpg)
+    background-image: url(../images/MF_background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: antiquewhite;
+    text-shadow: 0.1em 0.1em 0.1em black;
+    letter-spacing: 1px;
+    padding: 2em;
+    line-height: 2em;
+}
+
+#instructions {
+    text-align: center;
 }
 
 img {
@@ -9,35 +22,51 @@ img {
 }
 
 .char-choice {
+    margin: 1em;
     display: inline-block;
     border: 10px, solid, green;
+    background: rgb(20, 20, 20);
+    text-align: center;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.char-choice:hover {
+    cursor: pointer;
 }
 
 .availDef {
     display: inline-block;
     border: 10px, solid, green;
+    background: #efefef;
+    text-align: center;
 }
 
+.first-choice {
+    display: inline-block;
+    border: 10px, solid, green;
+    background: #efefef;
+    text-align: center;
+}
+
+.second-choice {
+    display: inline-block;
+    border: 10px, solid, green;
+    background: #efefef;
+    text-align: center;
+}
 
 h1 {
     font-size: 40px;
     text-align: center;
-    color: antiquewhite;
     text-shadow: 10px;
 }
 
 h2 {
     font-size: 24px;
-    color: antiquewhite;
     text-shadow: 10px;
 }
 
-.char-choice {
-    margin: 10px, 10px;
-    padding: 10px, 10px;
-    border: 5px, solid, greenyellow;
-    background: #efefef;
-}
 
 .picture {
     margin-left: auto;

@@ -26,30 +26,29 @@
             <li id="instructions">Battle begins, use the "shoot" button to inflict damage on your opponent.</li>
             <li id="instructions">If you successfuly defeat the first opponent, choose another until you are out of defenders.</li>
             <li id="instructions">If you eliminate all defenders before running out of health, you win!!</li>
-            <li id="instructions">You can choose to reset the game using the "start over" button at any time.</li>
         </ol>
     </div>
 
     <div id="char-row">
-        <div id="Han" class="char-choice">
+        <div id="Han" class="char-choice character">
             <h3 id="char-name">Han Solo</h3>
             <img class="picture" src="assets/images/Han.jpg">
-            <h3 id="health-points">100</h3>
+            <h3 class="health-points">100</h3>
         </div>
-        <div id="Boba" class="char-choice">
+        <div id="Boba" class="char-choice character">
             <h3 id="char-name">Boba Fett</h3>
             <img class="picture" src="assets/images/Boba.png">
-            <h3 id="health-points">140</h3>
+            <h3 class="health-points">140</h3>
         </div>
-        <div id="IG" class="char-choice">
+        <div id="IG" class="char-choice character">
             <h3 id="char-name">IG-88</h3>
             <img class="picture" src="assets/images/IG-88.jpg">
-            <h3 id="health-points">160</h3>
+            <h3 class="health-points">160</h3>
         </div>
-        <div id="Jabba" class="char-choice">
+        <div id="Jabba" class="char-choice character">
             <h3 id="char-name">Jabba The Hutt</h3>
             <img class="picture" src="assets/images/Jabba.jpg">
-            <h3 id="health-points">200</h3>
+            <h3 class="health-points">200</h3>
         </div>
     </div>
 
@@ -62,7 +61,8 @@
     <h2>Fight: </h2>
     <div id="battleground"></div>
     <button id="shoot">SHOOT</button>
-    <button id="reset">START OVER</button>
+    <div id="wins"></div>
+    <div id="losses"></div>
 
 
 
